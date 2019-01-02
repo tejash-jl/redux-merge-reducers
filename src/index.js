@@ -6,4 +6,5 @@ const mergeReducer = (...reducers) => (
   )
 );
 
+
 export default mergeReducer;
