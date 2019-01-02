@@ -4,7 +4,6 @@
   "description": "A redux package to merge reducers",
   "main": "build/index.js",
   "scripts": {
-    "prepublishOnly": "npm run build",
     "build": "npm run lint && babel ./src -d ./lib",
     "lint": "node_modules/.bin/eslint ./src",
     "test": "nyc mocha --require babel-core/register"
