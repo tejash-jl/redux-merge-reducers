@@ -4,7 +4,8 @@
   "description": "A redux package to merge reducers",
   "main": "build/index.js",
   "scripts": {
-    "build": "babel ./src -d ./lib",
+    "build": "npm run lint && babel ./src -d ./lib",
+    "lint": "eslint ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/tejashjl1020/redux-merge-reducers#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.11.1"
   }
 }
